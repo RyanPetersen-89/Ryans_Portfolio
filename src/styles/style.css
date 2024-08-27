@@ -1,0 +1,385 @@
+:root {
+  --teal: #209c9c;
+  --coolGrey: #929aab;
+  --gunmetalGrey: #000000;
+  --almostBlack: #0b0b0d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url(../../public/imgs/background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* app container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+/* header styles */
+header {
+  background-color: var(--teal);
+  padding: 1rem;
+}
+
+/* navigation styles */
+nav {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li a,
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-align: right;
+  transition: background-color 0.3s ease;
+  background-color: #8a3280;
+}
+
+nav ul li a:hover,
+.nav-link:hover {
+  background-color: var(--coolGrey);
+  color: #c216ae;
+}
+
+/* main content area */
+.content-area {
+  padding: 2rem;
+  text-align: center;
+}
+
+.profile-img {
+  width: 40%;
+  height: auto;
+}
+
+.about-container {
+  width: 70%;
+  height: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.588);
+  border: 1px solid var(--teal);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* footer styles */
+footer {
+  background-color: var(--teal);
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  text-align: center;
+}
+
+.footer a {
+  color: #8a3280;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 28px;
+}
+
+/* contact page styles */
+.contact-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid var(--teal);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f984;
+  text-align: center;
+}
+
+.contact-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--gunmetalGrey);
+}
+
+.contact-container form > div {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.contact-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--gunmetalGrey);
+}
+
+.contact-input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid var(--teal);
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact-input:focus {
+  border-color: var(--teal);
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.contact-submit {
+  background-color:#8a3280;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-submit:hover {
+  background-color: var(--gunmetalGrey);
+}
+
+/* portfolio card styles */
+.portfolioContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.portfolioHeading {
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.portfolioGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.projectCard {
+  background-color: #f9f9f986;
+  border: 1px solid var(--teal);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  height: 100px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.projectCard img {
+  width: 100%;
+  height: 200px;
+  height: auto;
+  display: block;
+}
+
+.projectCardTitle {
+  font-size: 20px;
+  margin: 15px;
+  background-color: #f9f9f988;
+  color: var(--gunmetalGrey);
+}
+
+.projectCardLinks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px 15px;
+}
+
+.projectCardLinks a:hover {
+  cursor: pointer;
+}
+
+.card-body {
+  background-color: var(--teal);
+  color: white;
+}
+
+.card-body a {
+  color: #8a3280;
+}
+
+/* resume styles */
+.resume-container {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  color: var(--gunmetalGrey);
+  background-color: #f9f9f987;
+  border: 1px solid var(--teal);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.coming-soon-image {
+  width: 500px;
+  height: auto;
+}
+
+.skills-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+  /* navigation */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  nav ul li a,
+  .nav-link {
+    padding: 1rem;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* portfolio */
+  .portfolioGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectCard {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* about/contact container  */
+  .about-container,
+  .contact-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  /* profile/coming soon images */
+  .profile-img,
+  .coming-soon-image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* content */
+  .content-area {
+    padding: 1rem;
+  }
+
+  .portfolioHeading,
+  .contact-container h1 {
+    font-size: 28px;
+  }
+
+  .projectCardTitle {
+    font-size: 18px;
+  }
+
+  .contact-container label {
+    font-size: 14px;
+  }
+
+  .contact-submit {
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color: #8a3280;
+  }
+
+  footer {
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* navigation */
+  nav ul li a,
+  .nav-link {
+    padding: 0.8rem;
+    font-size: 16px;
+  }
+
+  /* about/contact */
+  .about-container,
+  .contact-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* content */
+  .content-area {
+    padding: 0.5rem;
+  }
+
+  .portfolioHeading,
+  .contact-container h1 {
+    font-size: 24px;
+  }
+
+  .projectCardTitle {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 0.25rem;
+    font-size: 12px;
+  }
+}
