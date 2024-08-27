@@ -16,9 +16,9 @@ Welcome to my digital portfolio! This single-page application is a window into m
 
 ## Installation
 
-To install Kaila's Portfolio:
+To install Ryan's Portfolio:
 
-- Clone the repository: `https://github.com/girlnotfound/Kaila-Portfolio`
+- Clone the repository: `https://github.com/RyanPetersen-89/Ryans_Portfolio`
 
 - Navigate to the project directory
 
@@ -38,6 +38,6 @@ To install Kaila's Portfolio:
 
 This project was made possible with the help of:
 
-[Adam Rosenberg](https://github.com/AcoderRose)
+[Kaila Ronquillo](https://github.com/girlnotfound)
 
-[Ryan Petersen](https://github.com/RyanPetersen-89)
+[Adam Rosenberg](https://github.com/AcoderRose)
